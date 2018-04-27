@@ -1,0 +1,8 @@
+prefix=/home/kmxz/baxter_ws/devel
+
+Name: baxter_moveit_pick_and_place
+Description: Description of baxter_moveit_pick_and_place
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/kmxz/baxter_ws/devel/lib 
+Requires: moveit_core moveit_ros_planning_interface interactive_markers

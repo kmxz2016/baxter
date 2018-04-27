@@ -1,0 +1,14 @@
+main()
+  T.db =1 ;T.cb = 0; T.Cs = ∞ ；
+  forever
+  ReinitializeRRT(T);
+  T.Cn = CrowRRT(T);
+  if (T.Cn ! = null)
+    PostCurrentSolution (T);
+    T.Cs = (1-ξ)* T.Cn;
+    T.db = T.db - 0.1;
+  if (T.db < 0)
+    T.db = 0;
+    T.cb = T.cb + 0.1;
+  if (T.db > 1)
+    T.cb = 1;

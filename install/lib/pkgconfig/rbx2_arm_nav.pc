@@ -1,0 +1,8 @@
+prefix=/home/kmxz/baxter_ws/install
+
+Name: rbx2_arm_nav
+Description: Description of rbx2_arm_nav
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/kmxz/baxter_ws/install/lib 
+Requires: 

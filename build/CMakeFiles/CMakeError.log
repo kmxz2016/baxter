@@ -1,0 +1,149 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/km/baxter_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1648167314/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1648167314.dir/build.make CMakeFiles/cmTryCompileExec1648167314.dir/build
+make[1]: 正在进入目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1648167314.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1648167314.dir/CheckSymbolExists.c.o   -c /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1648167314
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1648167314.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1648167314.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1648167314 -rdynamic 
+CMakeFiles/cmTryCompileExec1648167314.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1648167314] 错误 1
+make[1]:正在离开目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1648167314/fast] 错误 2
+
+File /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/km/baxter_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec207948283/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec207948283.dir/build.make CMakeFiles/cmTryCompileExec207948283.dir/build
+make[1]: 正在进入目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec207948283.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec207948283.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec207948283
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec207948283.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec207948283.dir/CheckFunctionExists.c.o  -o cmTryCompileExec207948283 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec207948283] 错误 1
+make[1]:正在离开目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec207948283/fast] 错误 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/km/baxter_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3095452776/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3095452776.dir/build.make CMakeFiles/cmTryCompileExec3095452776.dir/build
+make[1]: 正在进入目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3095452776.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3095452776.dir/CheckSymbolExists.cxx.o -c /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[1]:正在离开目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3095452776.dir/CheckSymbolExists.cxx.o] 错误 1
+make: *** [cmTryCompileExec3095452776/fast] 错误 2
+
+File /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/km/baxter_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1877991763/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1877991763.dir/build.make CMakeFiles/cmTryCompileExec1877991763.dir/build
+make[1]: 正在进入目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1877991763.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1877991763.dir/CheckSymbolExists.cxx.o -c /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[1]:正在离开目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1877991763.dir/CheckSymbolExists.cxx.o] 错误 1
+make: *** [cmTryCompileExec1877991763/fast] 错误 2
+
+File /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/km/baxter_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1782225808/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1782225808.dir/build.make CMakeFiles/cmTryCompileExec1782225808.dir/build
+make[1]: 正在进入目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1782225808.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1782225808.dir/CheckSymbolExists.cxx.o -c /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[1]:正在离开目录 `/home/km/baxter_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1782225808.dir/CheckSymbolExists.cxx.o] 错误 1
+make: *** [cmTryCompileExec1782225808/fast] 错误 2
+
+File /home/km/baxter_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

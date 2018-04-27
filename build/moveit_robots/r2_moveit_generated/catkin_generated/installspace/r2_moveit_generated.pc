@@ -1,0 +1,8 @@
+prefix=/home/km/baxter_ws/install
+
+Name: r2_moveit_generated
+Description: Description of r2_moveit_generated
+Version: 1.1.0
+Cflags: 
+Libs: -L/home/km/baxter_ws/install/lib 
+Requires: 
